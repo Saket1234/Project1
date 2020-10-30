@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saket's zoo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body class="text-center">
+      <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar-brand" style="font-size: 25px; color: white;">Saket's zoo</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+    <div class="container" id="container3">
+        <h2>Blogs</h2>
+        <hr/>
+        <h6>Please post any blogs</h6> 
+
+        <center name="blogForm">
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="title" name="title" placeholder="Enter your title">
+          </div>
+          <div class="form-group col-md-6">
+            <textarea class="form-control" id="content" rows="3" name="content" placeholder="Enter your content here..." style="border-color: sienna;"></textarea>
+          </div>
+          <div class="form-group col-md-6">
+            <button type="submit" class="btn btn-primary" style="background-color: sienna;" onclick="todo()">Submit</button>
+          </div>
+        </center>
+    </div>
+    <hr/>
+    <div id="myList" name="myList"> 
+    </div>
+    <button class="btn btn-primary" style="background-color: sienna;"onclick="removeAll()">Clear Items</button>
+    <script src="js/todo.js"></script>
+</body>
+</html>

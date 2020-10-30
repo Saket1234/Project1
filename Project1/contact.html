@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saket's zoo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/validation.js"></script>
+</head>
+<body class="text-center">
+      <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar-brand" style="font-size: 25px; color: white;">Saket's zoo</a>
+        <div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container col-md-4" id="container1">
+          <img src="images/birds.jpg" ><br/><br/>
+          <h1>Contact Us</h1>
+          <hr>
+      </div>
+
+      <form name="contactForm">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">  
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+        <div class="form-group col-md-6">
+          <textarea class="form-control" id="message" rows="3" name="message" placeholder="Enter your message here..." style="border-color: sienna;"></textarea>
+        </div>
+        <div class="form-group col-md-6">
+          <button type="submit" class="btn btn-primary" style="background-color: sienna;" onclick="validation()">Submit</button>
+        </div>
+      </form>
+</body>
+</html>
